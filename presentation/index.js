@@ -158,6 +158,8 @@ export default class Presentation extends React.Component {
 
               * ~~Isomorphic~~ Universal rendering
               * Uni-directional flow
+
+              React is BYOA(rchitecture) (and convention)
               `}
             </Markdown>
           </Slide>
