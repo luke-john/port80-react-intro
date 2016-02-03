@@ -84,8 +84,8 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
             <br />
-            <Code>
-            Hello, Port 80
+            <Code style={{color: 'white'}}>
+            Hello Port 80
             </Code>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
@@ -165,7 +165,7 @@ export default class Presentation extends React.Component {
             <Heading caps fit size={1} textColor="tertiary">
             Active Community
             </Heading>
-            <Image src={images.gh.replace("/", "")} margin="0px auto 40px" height="293px"/>
+            <Image src={images.gh.replace("/", "")} margin="40px auto 40px" height="450px"/>
           </Slide>
           <Slide transition={["spin", "slide"]} bgColor="tertiary">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
