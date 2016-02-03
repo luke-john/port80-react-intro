@@ -1,0 +1,5 @@
+const HelloMessage = React.createClass({
+  render: function() {
+    return <div style={{color: 'white'}}>Hello {this.props.name}</div>;
+  }
+});

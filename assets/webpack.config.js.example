@@ -1,0 +1,25 @@
+// webpack.config.js
+
+module.exports = {
+  devtool: "source-map",
+  entry: [
+    "webpack-hot-middleware/client",
+    "babel-polyfill",
+    "./index"
+  ],
+  output: {...},
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
+  module: {
+    loaders: [{
+      test: /\.md$/,
+      loader: "html-loader!markdown-loader?gfm=false"
+    }, {
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      loader: "babel-loader"
+    }]
+  }
+};
